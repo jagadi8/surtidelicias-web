@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Surtidelicias - Catálogo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f0f1ef",
+                        "outline": "#897362",
+                        "surface": "#f9f9f8",
+                        "primary-fixed-dim": "#ffb77d",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#904d00",
+                        "primary": "#904d00",
+                        "on-primary-fixed": "#2f1500",
+                        "on-surface": "#1a1c1b",
+                        "tertiary-container": "#6cbc69",
+                        "surface-variant": "#e2e3e1",
+                        "surface-container-highest": "#e2e3e1",
+                        "surface-container-high": "#e8e8e6",
+                        "on-secondary-fixed": "#002204",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eeeeec",
+                        "primary-fixed": "#ffdcc3",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#94f990",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "tertiary": "#1b6d24",
+                        "on-tertiary-fixed": "#002204",
+                        "secondary": "#006e1c",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#00731e",
+                        "surface-container-low": "#f3f4f2",
+                        "outline-variant": "#ddc1ae",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#ffb77d",
+                        "on-tertiary-fixed-variant": "#005312",
+                        "surface-dim": "#dadad8",
+                        "on-primary-container": "#623200",
+                        "on-surface-variant": "#564334",
+                        "on-secondary-fixed-variant": "#005313",
+                        "on-background": "#1a1c1b",
+                        "inverse-surface": "#2f3130",
+                        "secondary-fixed-dim": "#78dc77",
+                        "secondary-container": "#91f78e",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#a3f69c",
+                        "surface-bright": "#f9f9f8",
+                        "on-tertiary-container": "#004a0f",
+                        "tertiary-fixed-dim": "#88d982",
+                        "background": "#f9f9f8",
+                        "primary-container": "#ff8c00",
+                        "error": "#ba1a1a"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; }
+        .font-plus-jakarta-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-lg shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-orange-700 dark:text-orange-500 hover:bg-zinc-100/50 dark:hover:bg-zinc-800/50 transition-colors active:scale-95 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-extrabold text-orange-800 dark:text-orange-400 italic font-plus-jakarta-sans tracking-tight">Surtidelicias</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100/50 dark:hover:bg-zinc-800/50 transition-colors active:scale-95 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="bg-zinc-100 dark:bg-zinc-800 h-[1px]"></div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Editorial Header -->
+<section class="mb-12">
+<div class="inline-block px-3 py-1 bg-tertiary-container/20 text-tertiary font-medium rounded-full text-xs mb-4 tracking-wider uppercase">Selección Premium</div>
+<h1 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tight leading-tight mb-4">
+                Nuestra Despensa Seleccionada
+            </h1>
+<p class="text-on-surface-variant max-w-lg leading-relaxed font-body">
+                Curamos los mejores productos del campo directamente para su negocio. Calidad garantizada en cada entrega.
+            </p>
+</section>
+<!-- Category Filter Pills -->
+<section class="mb-12 -mx-6 px-6 overflow-x-auto no-scrollbar">
+<div class="flex gap-3 whitespace-nowrap">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-semibold text-sm shadow-sm transition-transform active:scale-95">
+                    Todos
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    Lácteos
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    Carnes
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    Granos
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    Frutas y Verduras
+                </button>
+</div>
+</section>
+<!-- Product Grid (Asymmetric Bento-ish Style) -->
+<section class="grid grid-cols-2 gap-6 md:gap-10">
+<!-- Product Card 1 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-4 transition-transform group-hover:scale-[1.02] duration-300">
+<img alt="Tomate Chonto" class="w-full h-full object-cover" data-alt="Fresh vibrant red vine tomatoes on a light background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS4Cx7zP_e6J_XZS4p6hEqoc_HvLaIabzyJZzM7-TGetccrEjfNfnEbTjjeMQz3euSQcZPqd8V2ZpsQDIuJ-mI1um82tLqnEAbmv6S0elCN9rim1J7E_CbZki1LuRhh_cMHDlGLgjT215EiWQfzWc9BYmOvixrXebmEcczdNnVbFHxV3yftiV27rzcJ8T0yVKCcMVrLQAfF7OYoC6hsY0LeeSGTYIS0sPOu415eK8EAqY_nc-EbSgsAvEAYuCr6gCBgDdLvAmKh3k"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-secondary uppercase tracking-widest">Fresco</span>
+</div>
+</div>
+<div class="flex justify-between items-start gap-2">
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface leading-snug">Tomate Chonto Premium</h3>
+<p class="font-label text-sm text-on-surface-variant font-medium mt-1">$4.500 / kg</p>
+</div>
+<button class="bg-primary-container text-on-primary-container w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col mt-8 md:mt-12">
+<div class="relative aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-4 transition-transform group-hover:scale-[1.02] duration-300">
+<img alt="Queso Costeño" class="w-full h-full object-cover" data-alt="Gourmet wedge of artisanal aged cheese" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg-eNaj9_HDRbjZLimbCBROBJqrJXPIhEQ37U4gwblB2DEg0DrZAJwbuEq5tnOexcUCp8VnreYO5o5tMySl3zgVv-LMqGXbYDXEizG2N6OUh92OON2uKFJYjBj9ND3sJVuH5j5U0eAQXc5AOEHoA48n6ZXfJNzWeBERNiHx0XJgSAf4_9EN0uWvxq4FIhO25-Kdz-GiW7JmIv_DAQUzi0opkGCCIqw0oSYKo86GVvUvF4_0z2qSXM6mMOZQGZkkJNaaBE5IM2vU5M"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-orange-800 uppercase tracking-widest">Artesanal</span>
+</div>
+</div>
+<div class="flex justify-between items-start gap-2">
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface leading-snug">Queso Costeño Madurado</h3>
+<p class="font-label text-sm text-on-surface-variant font-medium mt-1">$18.200 / lb</p>
+</div>
+<button class="bg-primary-container text-on-primary-container w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col -mt-8 md:-mt-12">
+<div class="relative aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-4 transition-transform group-hover:scale-[1.02] duration-300">
+<img alt="Corte de Carne" class="w-full h-full object-cover" data-alt="Prime cut of raw beef steak high quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYdlsmxhn0nhhXgljO14T7Y4T8ePSNaLKPDlN4qEFYdpUaTRxl2b-Dpvb7CwOlbs4vXdvMcuXKDXc5tdd08q1VGZBOHCAbPJ8THIRVzHFdhYkV7zWJr0sRultf-Z97BxW4bMd18QG6L8QPtM3BHWpk_XGpr5RpLna7JEjuvK2kA3YKd2vMgjhZXUgg_AGiaAUU9FFdRSsPqltfXdqQNV6ST7AJxYLNj8VoX1Mmvf8WGSrKgVy_4CjOCMnpYx5R8RJLxHD1_Wqc1MA"/>
+</div>
+<div class="flex justify-between items-start gap-2">
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface leading-snug">Lomo Fino Seleccionado</h3>
+<p class="font-label text-sm text-on-surface-variant font-medium mt-1">$32.000 / kg</p>
+</div>
+<button class="bg-primary-container text-on-primary-container w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden mb-4 transition-transform group-hover:scale-[1.02] duration-300">
+<img alt="Arroz Integral" class="w-full h-full object-cover" data-alt="Bag of organic brown rice grains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO9g7f96HKZDs1a6XX77MjDqonp8IbuyyNghy1YQmhGU7slR84MjXZgXMM7JzOe403Cy44MGuIiH1L28jb7Ghz3VGCZqvn0sVbZWwK5PYKIHI3SL3mQIvtVfPHhye2t7p1IfJKvyyrB_LXH51jNSiUNaxw3ur06utEoIaIJc-H9tvVvq-ikfJwQujyMoqA41Ey_Ns2z_heJD_WicUU9sKXhAaIvlmOxl0P8e3taz8I3rlrf6FyotK-qLn4pyQKp9adV6lSTJAXfV8"/>
+</div>
+<div class="flex justify-between items-start gap-2">
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface leading-snug">Arroz Integral Orgánico</h3>
+<p class="font-label text-sm text-on-surface-variant font-medium mt-1">$6.800 / kg</p>
+</div>
+<button class="bg-primary-container text-on-primary-container w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-xl" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Featured Section with Glassmorphism -->
+<section class="mt-20 relative p-8 rounded-3xl overflow-hidden bg-secondary-container/20">
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2">
+<h2 class="text-3xl font-headline font-extrabold text-secondary mb-4 tracking-tight">Directo del Productor</h2>
+<p class="text-on-surface-variant leading-relaxed">Conectamos su mesa con los mejores cultivos locales, eliminando intermediarios para garantizar frescura y precio justo.</p>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-4">
+<div class="bg-white/60 backdrop-blur-md p-4 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-2" data-icon="local_shipping">local_shipping</span>
+<div class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Entrega</div>
+<div class="text-sm font-semibold">Mismo Día</div>
+</div>
+<div class="bg-white/60 backdrop-blur-md p-4 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-2" data-icon="verified_user">verified_user</span>
+<div class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Calidad</div>
+<div class="text-sm font-semibold">100% Organico</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(144,77,0,0.08)] rounded-t-3xl z-50">
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-500 px-5 py-2 hover:text-orange-500 dark:hover:text-orange-300 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-work-sans text-[11px] font-semibold uppercase tracking-wider">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-2xl px-5 py-2 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="import_contacts">import_contacts</span>
+<span class="font-work-sans text-[11px] font-semibold uppercase tracking-wider">Catálogo</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-500 px-5 py-2 hover:text-orange-500 dark:hover:text-orange-300 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="receipt_long">receipt_long</span>
+<span class="font-work-sans text-[11px] font-semibold uppercase tracking-wider">Pedidos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-500 px-5 py-2 hover:text-orange-500 dark:hover:text-orange-300 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-work-sans text-[11px] font-semibold uppercase tracking-wider">Perfil</span>
+</a>
+</nav>
+</body></html>
